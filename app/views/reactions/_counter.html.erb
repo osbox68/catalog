@@ -1,0 +1,7 @@
+<div class="container">
+    <ul>
+        <% Reaction.kind.each do |kind| %>
+        <li> <%= @product.count_with_kind(kind) %> </li>
+        <% end %>
+    </ul>
+</div>
